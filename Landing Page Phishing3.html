@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COMPANY Phishing Simulation</title>
+  <!-- Bootstrap and FontAwesome for icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #f1f8ff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .header {
+      background: linear-gradient(90deg, #1E90FF, #00BFFF);
+      color: #fff;
+      padding: 15px 20px;
+    }
+    .header img {
+      vertical-align: middle;
+    }
+    .header h3 {
+      display: inline;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    .navLink {
+      display: inline-block;
+      padding: 10px;
+    }
+    .jumbotron {
+      background: #fff;
+      border-radius: 8px;
+      padding: 40px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      border-top: 4px solid #1E90FF;
+    }
+    .tip-card {
+      background: #fff;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: left;
+    }
+    .tip-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .tip-card h1 {
+      font-size: 1.5em;
+      color: #EF5350;
+      margin-bottom: 0;
+    }
+    .tip-card h2 {
+      font-size: 1.3em;
+      margin: 10px 0;
+      color: #333;
+    }
+    .tip-card p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    /* Adjustments for the gray box (pre) */
+    .tip-card pre {
+      background: #e7f3fe;
+      border: 1px solid #b3d7ff;
+      padding: 10px;
+      border-radius: 4px;
+      display: inline-block;
+      max-width: 100%;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin: 10px 0;
+    }
+    .caution-banner {
+      border: 1px solid #ffeeba;
+      background-color: #fff3cd;
+      margin: 10px 0;
+      text-align: left;
+      padding: 10px;
+      color: #856404;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 0;
+      background: #1E90FF;
+      color: #fff;
+    }
+    .icon {
+      font-size: 1.3em;
+      margin-right: 10px;
+      vertical-align: middle;
+      color: #1E90FF;
+    }
+    /* Skull animation */
+    .skull-animation {
+      font-size: 3em;
+      color: #EF5350;
+      animation: pulse 2s infinite ease-in-out;
+      margin-top: 20px;
+    }
+    /* Laugh animation */
+    .laugh-animation {
+      font-size: 3em;
+      color: #FFC107;
+      animation: pulse 2s infinite ease-in-out;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    /* Mocking emojis animation for additional icons */
+    .mock-animation {
+      font-size: 3em;
+      animation: pulse 2s infinite ease-in-out;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="navLink">
+      <img src="logo.png" height="50" alt="Company Logo">
+      <h3><strong>Phishing Test</strong></h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h2>You clicked on a simulated phishing test.</h2>
+      <h3>Learn how to recognize phishing attempts and stay safe</h3>
+      <!-- Animated Skull and Laughing Emoji -->
+      <i class="fas fa-skull skull-animation"></i>
+      <i class="fas fa-face-laugh laugh-animation"></i>
+      <!-- Additional mocking emojis -->
+      <i class="fas fa-face-grin-squint mock-animation" style="color:#FF5722;"></i>
+    </div>
+    <div class="row">
+      <!-- Tip #1 -->
+      <div class="col-md-3">
+        <div class="tip-card">
+          <h1><i class="fas fa-search icon"></i>Tip #1</h1>
+          <h2>Stop, Look, Think</h2>
+          <p>Check if something looks off. Verify the sender’s address; a subtle misspelling may indicate a phishing attempt.</p>
+          <pre>Administrator &lt;<span style="color:red; font-weight:bold; font-style:italic;">admlnistrator23</span>@company.com.my&gt;</pre>
+        </div>
+      </div>
+      <!-- Tip #2 -->
+      <div class="col-md-3">
+        <div class="tip-card">
+          <h1><i class="fas fa-exclamation-triangle icon"></i>Tip #2</h1>
+          <h2>Spot the Red Flag</h2>
+          <p>At COMPANY, emails from external senders are flagged with a caution banner. Look out for these alerts.</p>
+          <div class="caution-banner">
+            <strong>CAUTION:</strong> This email originated from outside of this organization.
+            Do not click on links or open attachments unless you recognize the sender and know the content is safe.
+          </div>
+          <p style="font-size: 0.95em; color: #555;">
+            This is the caution banner if the email came from outside of the organization.
+          </p>
+        </div>
+      </div>
+      <!-- Tip #3 -->
+      <div class="col-md-3">
+        <div class="tip-card">
+          <h1><i class="fas fa-ban icon"></i>Tip #3</h1>
+          <h2>If in Doubt, Throw it Out</h2>
+          <p>If an email appears suspicious, err on the side of caution. Forward it to <a href="mailto:security@company.com.my">security@handalindah.com.my</a> for review.</p>
+        </div>
+      </div>
+      <!-- Tip #4 -->
+      <div class="col-md-3">
+        <div class="tip-card">
+          <h1><i class="fas fa-link icon"></i>Tip #4</h1>
+          <h2>Verify the URL Before Logging In</h2>
+          <p>Before submitting your username and password, check the URL in the address bar. Make sure it starts with <strong>https://</strong> and matches the official domain name.</p>
+          <pre>https://login.microsoftonline.com/</pre>
+          <p>If the URL looks suspicious or unfamiliar, do not proceed.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Stay vigilant and always verify the authenticity of unexpected emails.</p>
+    </div>
+  </div>
+</body>
+</html>
