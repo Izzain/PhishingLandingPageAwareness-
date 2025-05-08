@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Phishing Training Page</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    /* Fade-in keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Container Style */
+    .container {
+      background: #ffffff;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin: 40px auto;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Suggested image styling */
+    .header-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Title and Subtitle */
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #d9534f; /* a bright color to catch attention */
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #777;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    /* Suggestion Box */
+    .tips-container {
+      background: #fafafa;
+      padding: 15px;
+      border-left: 4px solid #d9534f;
+      text-align: left;
+      margin-top: 20px;
+      border-radius: 4px;
+    }
+
+    .tips-container h3 {
+      margin-bottom: 10px;
+    }
+
+    .tips-container ul {
+      list-style-type: circle;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .btn-container {
+      margin-top: 20px;
+    }
+
+    .btn-container a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #d9534f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn-container a:hover {
+      background: #c9302c;
+    }
+
+    /* Subtle pulse animation for the main container */
+    .container:hover {
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      to {
+        transform: scale(1.02);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Replace the src attribute with your own preferred image -->
+    <img 
+      src="https://via.placeholder.com/600x300?text=Training+Image" 
+      alt="Phishing Awareness" 
+      class="header-image"
+    />
+
+    <h1>You’re Protected!</h1>
+    <h2>Welcome to Your Company’s Phishing Drill</h2>
+    <p>
+      This page confirms you clicked a simulated phishing link.  
+      Your organization is teaching effective ways to spot suspicious emails.  
+      Please go over the pointers below to heighten your awareness.
+    </p>
+
+    <div class="tips-container">
+      <h3>Practical Ways to Identify Fake Emails:</h3>
+      <ul>
+        <li>Double-check the display name. Reveal the sender address to see if it matches what you expect.</li>
+        <li>Take note of strange subdomains in the email address, like <strong>@accounts.hacker-portal.com</strong>.</li>
+        <li>Hover over any link or button to confirm the real destination before clicking.</li>
+        <li>Stay alert if a message urges immediate action without context. Question emails that feel rushed.</li>
+        <li>If in doubt, contact your company’s support or IT team for guidance.</li>
+      </ul>
+      <p>
+        These guidelines help you spot deception and shield company data.
+      </p>
+    </div>
+
+    <div class="btn-container">
+      <a href="javascript:void(0)">Acknowledge & Close</a>
+    </div>
+  </div>
+</body>
+</html>

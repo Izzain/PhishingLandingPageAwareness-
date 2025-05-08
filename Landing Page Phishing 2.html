@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Awareness Training</title>
+  <style>
+    /* Reset some basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2ecc71, #3498db);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 90%;
+      padding: 2rem;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card-content {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .card-content h1 {
+      font-size: 2rem;
+      color: #e74c3c;
+      margin-bottom: 0.5rem;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .tips {
+      margin-top: 1.5rem;
+      background: #f9f9f9;
+      border-left: 5px solid #e74c3c;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .tips h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .tips ul {
+      list-style: inside square;
+      color: #444;
+    }
+    .tips li {
+      margin-bottom: 0.5rem;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #e74c3c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Replace the image URL with your own training image if desired -->
+    <img src="https://via.placeholder.com/600x300?text=Cyber+Security" alt="Cyber Security" />
+    <div class="card-content">
+      <h1>Security Awareness Training</h1>
+      <p>
+        You have just encountered a simulated phishing link. This exercise is designed to help you identify phishing attempts and keep our company secure.
+      </p>
+    </div>
+    <div class="tips">
+      <h2>How to Avoid Phishing Attacks:</h2>
+      <ul>
+        <li>Verify the sender's email address and ensure it matches known contacts.</li>
+        <li>Be cautious if the email domain appears misspelled or altered.</li>
+        <li>Hover over links to check the real URL before clicking.</li>
+        <li>Beware of messages that pressure you to act immediately.</li>
+        <li>Always confirm with IT if you're in doubt about an email's legitimacy.</li>
+      </ul>
+    </div>
+    <div class="button-container">
+      <a href="javascript:void(0);" class="btn">Understood &amp; Close</a>
+    </div>
+  </div>
+</body>
+</html>
